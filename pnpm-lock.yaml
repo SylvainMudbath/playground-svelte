@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   web-vitals:
-    specifier: ^2.1.4
-    version: 2.1.4
+    specifier: ^3.3.1
+    version: 3.4.0
 
 devDependencies:
   '@sveltejs/adapter-auto':
@@ -2246,8 +2246,8 @@ packages:
       - terser
     dev: true
 
-  /web-vitals@2.1.4:
-    resolution: {integrity: sha512-sVWcwhU5mX6crfI5Vd2dC4qchyTqxV8URinzt25XqVh+bHEPGH4C3NPrNionCP7Obx59wrYEbNlw4Z8sjALzZg==}
+  /web-vitals@3.4.0:
+    resolution: {integrity: sha512-n9fZ5/bG1oeDkyxLWyep0eahrNcPDF6bFqoyispt7xkW0xhDzpUBTgyDKqWDi1twT0MgH4HvvqzpUyh0ZxZV4A==}
     dev: false
 
   /which@2.0.2:
