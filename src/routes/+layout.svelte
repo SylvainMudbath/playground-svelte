@@ -7,12 +7,25 @@
 
   let analyticsId = import.meta.env.VERCEL_ANALYTICS_ID;
 
-  $: if (browser && analyticsId) {
-    webVitals({
-      path: $page.url.pathname,
-      params: $page.params,
-      analyticsId
-    })
+  // $: if (browser && analyticsId) {
+  //   webVitals({
+  //     path: $page.url.pathname,
+  //     params: $page.params,
+  //     analyticsId
+  //   })
+  // }
+
+
+
+  /** @type {import('./$types').LayoutServerData} */
+  export let data;
+
+  $: if (browser && data?.analyticsId) {
+      webVitals({
+          path: $page.url.pathname,
+          params: $page.params,
+          analyticsId: data.analyticsId
+      });
   }
 </script>
 
