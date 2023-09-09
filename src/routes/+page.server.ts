@@ -1,8 +1,6 @@
 import { error } from '@sveltejs/kit';
 import contentfulFetch from '$lib/contentful-fetch';
 
-import { env } from '$env/dynamic/private';
-
 const query = `
 {
 	employeeCollection{
@@ -44,6 +42,5 @@ export async function load() {
         startDate: formattedStartDate,
       }
     }),
-    analyticsId: env.VERCEL_ANALYTICS_ID
   }
 }
